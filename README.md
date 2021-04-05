@@ -1,2 +1,1 @@
-# ranga-java-oom
-Java OutOfMemory Example
+# Java OutOfMemoryError Example
