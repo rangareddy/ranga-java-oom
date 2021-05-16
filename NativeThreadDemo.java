@@ -1,10 +1,9 @@
-package com.ranga.oom;
-
-public class NativeThread {
+public class NativeThreadDemo {
     public static void main(String[] args) {
         runThreads();
     }
     public static void runThreads() {
+        int count = 0;
         while (true) {
             Thread thread = new Thread(new Runnable() {
                 @Override
@@ -17,6 +16,7 @@ public class NativeThread {
                 }
             });
             thread.start();
+            System.out.println(count++);
         }
     }
 }

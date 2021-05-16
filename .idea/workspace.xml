@@ -20,13 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="274ad53b-1891-4cd4-8155-b3b24289d3fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/javassist.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ranga/oom/ArraySizeExceedsLimit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ranga/oom/GCOverheadLimit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ranga/oom/KillProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ranga/oom/Metaspace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ranga/oom/NativeThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ranga/oom/PermgenSpace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ranga-java-oom/com/ranga/oom/ArraySizeExceedsLimit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ranga-java-oom/com/ranga/oom/GCOverheadLimit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ranga-java-oom/com/ranga/oom/JavaHeapSpace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ranga-java-oom/com/ranga/oom/KillProcess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ranga-java-oom/com/ranga/oom/Metaspace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ranga-java-oom/com/ranga/oom/NativeThread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ranga-java-oom/com/ranga/oom/NativeThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ranga-java-oom/com/ranga/oom/PermgenSpace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ranga/oom/ArraySizeExceedsLimit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ranga/oom/GCOverheadLimit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ranga/oom/JavaHeapSpace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ranga/oom/KillProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ranga/oom/Metaspace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ranga/oom/NativeThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ranga/oom/PermgenSpace.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +87,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KillProcess">
+  <component name="RunManager" selected="Application.JavaHeapSpace">
     <configuration name="ArraySizeExceedsLimit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ranga.oom.ArraySizeExceedsLimit" />
       <module name="ranga-java-oom" />
@@ -94,6 +104,7 @@
     <configuration name="JavaHeapSpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ranga.oom.JavaHeapSpace" />
       <module name="ranga-java-oom" />
+      <option name="VM_PARAMETERS" value="-Xms5M" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ranga.oom.*" />
@@ -145,19 +156,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ArraySizeExceedsLimit" />
       <item itemvalue="Application.JavaHeapSpace" />
+      <item itemvalue="Application.KillProcess" />
       <item itemvalue="Application.Metaspace" />
       <item itemvalue="Application.NativeThread" />
-      <item itemvalue="Application.ArraySizeExceedsLimit" />
-      <item itemvalue="Application.KillProcess" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JavaHeapSpace" />
         <item itemvalue="Application.KillProcess" />
         <item itemvalue="Application.ArraySizeExceedsLimit" />
         <item itemvalue="Application.NativeThread" />
         <item itemvalue="Application.Metaspace" />
-        <item itemvalue="Application.JavaHeapSpace" />
       </list>
     </recent_temporary>
   </component>
@@ -182,12 +193,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="360" y="189" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617616861747">
+    <state x="360" y="189" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617623418619">
       <screen x="0" y="25" width="1792" height="1010" />
     </state>
-    <state x="360" y="189" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1010@0.25.1792.1010" timestamp="1617616861747" />
+    <state x="360" y="189" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1010@0.25.1792.1010" timestamp="1617623418619" />
     <state x="633" y="336" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1617615214873">
       <screen x="0" y="25" width="1792" height="1010" />
     </state>
@@ -196,22 +208,38 @@
       <screen x="0" y="25" width="1792" height="1010" />
     </state>
     <state x="667" y="410" width="612" height="382" key="DetectedRootsChooserDialog/0.25.1792.1010@0.25.1792.1010" timestamp="1617616080777" />
-    <state width="1771" height="336" key="GridCell.Tab.0.bottom" timestamp="1617618751388">
+    <state width="1771" height="272" key="GridCell.Tab.0.bottom" timestamp="1617623803282">
       <screen x="0" y="25" width="1792" height="1010" />
     </state>
-    <state width="1771" height="336" key="GridCell.Tab.0.bottom/0.25.1792.1010@0.25.1792.1010" timestamp="1617618751388" />
-    <state width="1771" height="336" key="GridCell.Tab.0.center" timestamp="1617618751387">
+    <state width="1771" height="272" key="GridCell.Tab.0.bottom/0.25.1792.1010@0.25.1792.1010" timestamp="1617623803282" />
+    <state width="1771" height="272" key="GridCell.Tab.0.center" timestamp="1617623803278">
       <screen x="0" y="25" width="1792" height="1010" />
     </state>
-    <state width="1771" height="336" key="GridCell.Tab.0.center/0.25.1792.1010@0.25.1792.1010" timestamp="1617618751387" />
-    <state width="1771" height="336" key="GridCell.Tab.0.left" timestamp="1617618751387">
+    <state width="1771" height="272" key="GridCell.Tab.0.center/0.25.1792.1010@0.25.1792.1010" timestamp="1617623803278" />
+    <state width="1771" height="272" key="GridCell.Tab.0.left" timestamp="1617623803273">
       <screen x="0" y="25" width="1792" height="1010" />
     </state>
-    <state width="1771" height="336" key="GridCell.Tab.0.left/0.25.1792.1010@0.25.1792.1010" timestamp="1617618751387" />
-    <state width="1771" height="336" key="GridCell.Tab.0.right" timestamp="1617618751388">
+    <state width="1771" height="272" key="GridCell.Tab.0.left/0.25.1792.1010@0.25.1792.1010" timestamp="1617623803273" />
+    <state width="1771" height="272" key="GridCell.Tab.0.right" timestamp="1617623803281">
       <screen x="0" y="25" width="1792" height="1010" />
     </state>
-    <state width="1771" height="336" key="GridCell.Tab.0.right/0.25.1792.1010@0.25.1792.1010" timestamp="1617618751388" />
+    <state width="1771" height="272" key="GridCell.Tab.0.right/0.25.1792.1010@0.25.1792.1010" timestamp="1617623803281" />
+    <state width="1771" height="336" key="GridCell.Tab.1.bottom" timestamp="1617618789328">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1771" height="336" key="GridCell.Tab.1.bottom/0.25.1792.1010@0.25.1792.1010" timestamp="1617618789328" />
+    <state width="1771" height="336" key="GridCell.Tab.1.center" timestamp="1617618789327">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1771" height="336" key="GridCell.Tab.1.center/0.25.1792.1010@0.25.1792.1010" timestamp="1617618789327" />
+    <state width="1771" height="336" key="GridCell.Tab.1.left" timestamp="1617618789327">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1771" height="336" key="GridCell.Tab.1.left/0.25.1792.1010@0.25.1792.1010" timestamp="1617618789327" />
+    <state width="1771" height="336" key="GridCell.Tab.1.right" timestamp="1617618789328">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1771" height="336" key="GridCell.Tab.1.right/0.25.1792.1010@0.25.1792.1010" timestamp="1617618789328" />
     <state x="384" y="108" key="SettingsEditor" timestamp="1617616118629">
       <screen x="0" y="25" width="1792" height="1010" />
     </state>
