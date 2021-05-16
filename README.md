@@ -8,4 +8,4 @@
 6. [java.lang.OutOfMemoryError: Unable to create new native thread](https://github.com/rangareddy/ranga-java-oom/blob/main/NativeThreadDemo.java)
 7. [java.lang.OutOfMemoryError: request bytes for . Out of swap space?]()
 8. [java.lang.OutOfMemoryError: Kill process or sacrifice child](https://github.com/rangareddy/ranga-java-oom/blob/main/KillProcessDemo.java)
-9. [java.lang.OutOfMemoryError: Direct buffer memory](#https://github.com/rangareddy/ranga-java-oom/blob/main/DirectBufferMemoryDemo.java)
+9. [java.lang.OutOfMemoryError: Direct buffer memory](https://github.com/rangareddy/ranga-java-oom/blob/main/DirectBufferMemoryDemo.java)
