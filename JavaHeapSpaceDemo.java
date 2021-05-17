@@ -1,6 +1,9 @@
 // JavaHeapSpaceDemo.java
+
 import java.util.*;
-// JVM params -Xms10m -Xmx10m
+
+// JVM Parameters: -Xms10m -Xmx10m
+
 public class JavaHeapSpaceDemo {
     private final static int SIZE = 1024 * 1024 * 1024;
     public static void main(String[] args) {
