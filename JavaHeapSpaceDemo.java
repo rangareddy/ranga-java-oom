@@ -1,3 +1,4 @@
+// JavaHeapSpaceDemo.java
 import java.util.*;
 // JVM params -Xms10m -Xmx10m
 public class JavaHeapSpaceDemo {
