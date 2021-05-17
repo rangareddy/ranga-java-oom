@@ -1,5 +1,7 @@
+// GCOverheadLimitDemo.java
 import java.util.*;
 
+// JVM Parameters: -Xms10m -Xmx10m -XX:+UseParallelGC
 public class GCOverheadLimitDemo {
     public static void main(String[] args) {
         gcOverheadLimit();
