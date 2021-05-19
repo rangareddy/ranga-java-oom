@@ -1,4 +1,8 @@
 // GetHeapSizeDemo.java
+// java GetHeapSizeDemo
+// java -Xmx128M GetHeapSizeDemo
+// java -Xms16M -Xmx128M GetHeapSizeDemo
+
 public class GetHeapSizeDemo {
 
     private static final long MEGA_BYTE = 1024 * 1024; // 1MB = 1048576 = 1024 KB = 1024 * 1024 B
@@ -7,11 +11,6 @@ public class GetHeapSizeDemo {
     private static final Runtime runtime = Runtime.getRuntime();
 
     public static void main(String[] args) {
-        printMemoryUsage();
-    }
-
-    private static void printMemoryUsage() {
-
         // Memory which is currently available for use by heap
         long totalMemoryInMB = runtime.totalMemory() / MEGA_BYTE;
         System.out.println("Total Memory  : " + totalMemoryInMB + " MB"); // initial heap size
