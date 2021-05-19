@@ -1,9 +1,8 @@
 // MetaspaceDemo.java
+// JVM Parameters: -XX:MetaspaceSize=64M -XX:MaxMetaspaceSize=256M
 
 import javassist.CannotCompileException;
 import javassist.ClassPool;
-
-// JVM Parameters: -XX:MetaspaceSize=64M -XX:MaxMetaspaceSize=256M
 
 public class MetaspaceDemo {
     public static void main(String args[]) throws Exception
