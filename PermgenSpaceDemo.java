@@ -1,6 +1,8 @@
 // PermgenSpaceDemo.java
-import java.util.*;
 // JVM Parameters: -XX:PermSize=2M -XX:MaxPermSize=5M
+
+import java.util.*;
+
 public class PermgenSpaceDemo {
     public static void main(String args[]) {
         List<String> list = new ArrayList<>();
