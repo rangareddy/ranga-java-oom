@@ -1,8 +1,7 @@
+// NativeThreadDemo.java
+
 public class NativeThreadDemo {
     public static void main(String[] args) {
-        runThreads();
-    }
-    public static void runThreads() {
         int count = 0;
         while (true) {
             Thread thread = new Thread(new Runnable() {
