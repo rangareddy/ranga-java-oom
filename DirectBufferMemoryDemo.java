@@ -1,8 +1,7 @@
 // DirectBufferMemoryDemo.java
+// JVM Parameters: -XX:MaxDirectMemorySize=5m
 
 import java.nio.ByteBuffer;
-
-// JVM Parameters: -XX:MaxDirectMemorySize=5m
 public class DirectBufferMemoryDemo {
     public static void main(String[] args) {
 
