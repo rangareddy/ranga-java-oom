@@ -1,12 +1,9 @@
 // GCOverheadLimitDemo.java
-import java.util.*;
-
 // JVM Parameters: -Xms10m -Xmx10m -XX:+UseParallelGC
+
+import java.util.*;
 public class GCOverheadLimitDemo {
     public static void main(String[] args) {
-        gcOverheadLimit();
-    }
-    public static void gcOverheadLimit() {
         int count = 0 ;
         List <Employee> list = new ArrayList<> ();
         while ( true ){
