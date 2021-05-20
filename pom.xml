@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ranga.java.oom</groupId>
+    <artifactId>ranga_java_oom</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>Java OOM Examples</name>
+
+    <properties>
+        <!-- Maven compiler plugin version-->
+        <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+
+        <!-- Java version -->
+        <java.version>1.8</java.version>
+
+        <!-- junit version -->
+        <junit.version>4.13</junit.version>
+
+        <!-- java assist -->
+        <javassist.version>3.12.1.GA</javassist.version>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/javassist/javassist -->
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>${javassist.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <!-- Maven Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
