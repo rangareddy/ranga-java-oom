@@ -18,7 +18,7 @@
         <java.version>1.8</java.version>
 
         <!-- junit version -->
-        <junit.version>4.13</junit.version>
+        <junit.version>4.13.1</junit.version>
 
         <!-- java assist -->
         <javassist.version>3.12.1.GA</javassist.version>
