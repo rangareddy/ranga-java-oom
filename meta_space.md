@@ -16,13 +16,12 @@ GC performanceimprovements, enabling concurrent class data de-allocation without
 Support for further optimizations such as G1concurrent class unloading.
 
 <p align='center'>
-  <img src='https://camo.githubusercontent.com/6eeac2a2bfcab9fe0cedef3761e105951d0ea360dbfefb11dbf8e3612dd4acec/68747470733a2f2f7777772e70726f6772616d6d6572736f756768742e636f6d2f696d616765732f3130332f35636239343266623361353736343230303939373662343235396139313835372e706e67'>
+  <img src='https://github.com/rangareddy/ranga-java-oom/blob/main/images/OOM_MetaSpace.jpeg'>
 </p>
 
 The main cause for the java.lang.OutOfMemoryError: Metaspace is
 * Too many class are loaded or
 * Classes loaded very huge in size.
-
 
 **Checking MetaSpace capacity:**
 ```sh
