@@ -2,8 +2,8 @@
 
 There are 9 types of **java.lang.OutOfMemoryError** in Java.
 
-<p align='center'>
-  <img scr='https://github.com/rangareddy/ranga-java-oom/blob/main/images/JVM_Archiitecture.png'>
+<p align="center">
+  <img scr="https://github.com/rangareddy/ranga-java-oom/blob/main/images/OOM_Error_Types.png">
 </p>
 
 1. [java.lang.OutOfMemoryError: Java heap space](https://github.com/rangareddy/ranga-java-oom/blob/main/java_heap_space.md)
@@ -15,5 +15,3 @@ There are 9 types of **java.lang.OutOfMemoryError** in Java.
 7. [java.lang.OutOfMemoryError: request `<bytes>` for `<reason>`. Out of swap space?](https://github.com/rangareddy/ranga-java-oom/blob/main/swap_space.md)
 8. [java.lang.OutOfMemoryError: Kill process or sacrifice child](https://github.com/rangareddy/ranga-java-oom/blob/main/kill_process.md)
 9. [java.lang.OutOfMemoryError: Direct buffer memory](https://github.com/rangareddy/ranga-java-oom/blob/main/direct_buffer_memory.md)
-
-
