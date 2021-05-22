@@ -43,11 +43,6 @@ If the virtual memory of the operating system is exhausted, or is limited by the
 
 JVM will throw **java.lang.OutOfMemoryError: Unable to create new native thread** an error.
 
-**Java Native Memory Tracking**
-```
--XX:+UnlockDiagnosticVMOptions -XX:NativeMemoryTracking=detail -XX:+PrintNMTStatistics
-```
-
 In high-concurrency application scenarios, if the number of threads created exceeds the system default maximum number of threads, this exception will be thrown. By default, a single Linux process cannot exceed 1024 threads.
 
 ```java
