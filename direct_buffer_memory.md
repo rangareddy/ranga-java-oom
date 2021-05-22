@@ -28,7 +28,7 @@ public abstract class ByteBuffer extends Buffer implements Comparable<ByteBuffer
 The following figure shows the difference between direct and indirect ByteBuffer objects:
 
 <p align="center">
-  <img src="https://camo.githubusercontent.com/670f3f8bd330a278c88cb18c6128b6598cbc71dbc35c521fd8992f850d5c4a1a/68747470733a2f2f696d672d626c6f672e6373646e696d672e636e2f696d675f636f6e766572742f35363366646565396466303066666234656538663066326565366364313630362e676966">
+  <img src="https://github.com/rangareddy/ranga-java-oom/blob/main/images/OOM_DirectBuffer.gif">
 </p>
 
 The direct buffer (mainly DirectByteBuffer) in Java NIO is divided into two parts:
