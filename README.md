@@ -13,5 +13,5 @@ There are 9 types of **java.lang.OutOfMemoryError** in Java.
 9. [java.lang.OutOfMemoryError: Direct buffer memory](https://github.com/rangareddy/ranga-java-oom/blob/main/direct_buffer_memory.md)
 
 <p align='center'>
-  <img scr='https://github.com/rangareddy/ranga-hadoop-notes/raw/master/images/spark_oom/JVM%20Archiitecture2.png'>
+  <img scr='https://github.com/rangareddy/ranga-java-oom/blob/main/images/JVM_Archiitecture2.png'>
 </p>
