@@ -51,6 +51,11 @@ class DirectByteBuffer extends MappedByteBuffer  implements DirectBuffer {
 ```
 The JAVA object of the direct buffer is managed by the GC. As long as the GC reclaims its JAVA object, the operating system will release the space requested by the direct buffer.
 
+**Java Native Memory Tracking**
+```
+-XX:+UnlockDiagnosticVMOptions -XX:NativeMemoryTracking=detail -XX:+PrintNMTStatistics
+```
+
 The off-heap memory size limit can be determined by specifying JVM parameters
 ```sh
 -XX:MaxDirectMemorySize=512m
@@ -100,7 +105,13 @@ Configured maxDirectMemory: 10 MB
 **Solution:**
 
 1. Check whether nio is used directly or indirectly, such as manually calling the method of generating buffer or using nio containers such as netty, jetty, tomcat, etc.
-2. Increase the '-XX:MaxDirectMemorySize' parameter value.
-3. JVM parameters to check whether there are '-XX:+DisableExplicitGCoptions', if there is to be removed, because the parameters will System.gc() fail.
+2. Increase the direct max memory '-XX:MaxDirectMemorySize' parameter value.
+```sh
+-XX:MaxDirectMemorySize=256M
+```
+4. JVM parameters to check whether there are '-XX:+DisableExplicitGCoptions', if there is to be removed, because the parameters will System.gc() fail.
+```sh
+-XX:+DisableExplicitGC
+```
 4. Java can only use Direct ByteBuffer through the ByteBuffer.allocateDirect() method. Therefore, this method can be intercepted by online diagnostic tools such as Arthas for troubleshooting.
 5. The memory capacity is indeed insufficient, upgrade the configuration.
