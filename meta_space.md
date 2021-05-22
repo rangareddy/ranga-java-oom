@@ -1,10 +1,10 @@
 # java.lang.OutOfMemoryError: Metaspace
 
-Java class metadata is allocated in native memory called metaspace. If metaspace for class metadata is exhausted, a java.lang.OutOfMemoryError exception with a detail MetaSpace is thrown.
+> Java class metadata is allocated in native memory called metaspace.
+> 
+The **java.lang.OutOfMemoryError: Metaspace** indicates that the amount of **native memory** allocated for **Java class metadata is exausted**.
 
-The java.lang.OutOfMemoryError: Metaspace message in the metaspace indicates that the metaspace area is exhausted in the memory.
-
-The amount of metaspace that can be used for class metadata is limited by the parameter MaxMetaSpaceSize, which is specified on the command line. When the amount of native memory needed for a class metadata exceeds MaxMetaSpaceSize, a java.lang.OutOfMemoryError exception with a detail MetaSpace is thrown.
+The amount of metaspace that can be used for class metadata is limited by the parameter **MaxMetaSpaceSize**, which is specified on the command line. When the amount of native memory needed for a class metadata exceeds MaxMetaSpaceSize, a java.lang.OutOfMemoryError exception with a detail MetaSpace is thrown.
 
 Since this is the replacement of the permanent generation region, the Metaspace region now stores the information of permanent generation. It is used to store things like the declarations, including name and fields of the class, methods with their bytecode, object arrays, constant pool information and JIT compiler optimization of the loaded classes.
 
@@ -19,7 +19,7 @@ Support for further optimizations such as G1concurrent class unloading.
   <img src='https://github.com/rangareddy/ranga-java-oom/blob/main/images/OOM_MetaSpace.jpeg'>
 </p>
 
-The main cause for the java.lang.OutOfMemoryError: Metaspace is
+The main cause for the **java.lang.OutOfMemoryError: Metaspace** is
 * Too many class are loaded or
 * Classes loaded very huge in size.
 
@@ -29,16 +29,20 @@ jstat -gcmetacapacity (PID)
 jstat -gcmetacapacity 11236
    MCMN       MCMX        MC       CCSMN      CCSMX       CCSC     YGC   FGC    FGCT     GCT
       0.0  1110016.0    69208.0        0.0  1048576.0     9088.0   132     4    0.564    2.373
+```
+* MCMN: Minimum metaspace capacity (kB).
+* MCMX: Maximum metaspace capacity (kB).
+* **MC: Metaspace capacity (kB)**.
+* CCSMN: Compressed class space minimum capacity (kB).
+* CCSMX: Compressed class space maximum capacity (kB).
+* YGC: Number of young generation GC events.
+* FGC: Number of full GC events.
+* FGCT: Full garbage collection time.
+* GCT: Total garbage collection time.
 
-MCMN: Minimum metaspace capacity (kB).
-MCMX: Maximum metaspace capacity (kB).
-MC: Metaspace capacity (kB).
-CCSMN: Compressed class space minimum capacity (kB).
-CCSMX: Compressed class space maximum capacity (kB).
-YGC: Number of young generation GC events.
-FGC: Number of full GC events.
-FGCT: Full garbage collection time.
-GCT: Total garbage collection time.
+**Monitoring MetaSpace Size with Java Native Memory tracking**
+```sh
+-XX:+UnlockDiagnosticVMOptions -XX:NativeMemoryTracking=detail -XX:+PrintNMTStatistics
 ```
 
 Hence, this type of error is thrown by JVM for having a large number of big classes. The following example uses javassist package from the link: http://jboss-javassist.github.io/javassist/ which enables Java bytecode manipulation.
