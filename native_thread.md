@@ -71,19 +71,22 @@ public class NativeThreadDemo {
 ```
 
 ```sh
-javac NativeThreadDemo.java
-java NativeThreadDemo
+$ javac NativeThreadDemo.java
+$ java NativeThreadDemo
+
 1
 2
 ...
 
-4069
-4070
+8160
+8161
+8162
+8163
+8164
 Exception in thread "main" java.lang.OutOfMemoryError: unable to create new native thread
-  at java.lang.Thread.start0(Native Method)
-  at java.lang.Thread.start(Thread.java:717)
-  at NativeThreadDemo.runThreads(NativeThreadDemo.java:18)
-  at NativeThreadDemo.main(NativeThreadDemo.java:3)
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at com.ranga.java.oom.NativeThreadDemo.main(NativeThreadDemo.java:16)
 ```
 The native thread limit is platform-dependent so it will take a different number of threads in order to reach to the limit.
 

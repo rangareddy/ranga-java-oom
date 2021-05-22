@@ -11,16 +11,16 @@ Requested array size exceeds VM limit indicates that indicates that the applicat
 In most cases the problem is either a configuration issue (heap size too small), or a bug that results in an application attempting to create a huge array, for example, when the number of elements in the array are computed using an algorithm that computes an incorrect size.
 
 ```java
-package com.ranga.oom;
+// ArraySizeExceedsLimitDemo.java
+// JVM Parameters: -Xms10m -Xmx10m
 
-public class ArraySizeExceedsLimit {
+package com.ranga.java.oom;
+
+public class ArraySizeExceedsLimitDemo {
     private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE;
-    public static void main(String[] args) {
-        arraySizeChecker();
-    }
 
-    public static void arraySizeChecker(){
-        int[] bytes=new int[MAX_ARRAY_SIZE];
+    public static void main(String[] args) {
+        int[] bytes = new int[MAX_ARRAY_SIZE];
     }
 }
 ```
@@ -29,8 +29,7 @@ The maximum positive int in Java is 2^31 – 1 = 2,147,483,647. And the platform
 $ javac ArraySizeExceedsLimitDemo.java
 $ java -Xms10m -Xmx10m ArraySizeExceedsLimitDemo
 Exception in thread "main" java.lang.OutOfMemoryError: Requested array size exceeds VM limit
-  at ArraySizeExceedsLimitDemo.arraySizeChecker(ArraySizeExceedsLimitDemo.java:8)
-  at ArraySizeExceedsLimitDemo.main(ArraySizeExceedsLimitDemo.java:4)
+	at com.ranga.java.oom.ArraySizeExceedsLimitDemo.main(ArraySizeExceedsLimitDemo.java:10)
 ```
 
 The java.lang.OutOfMemoryError: Requested array size exceeds VM limit can appear as a result of either of the following situations:

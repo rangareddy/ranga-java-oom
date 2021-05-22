@@ -48,24 +48,58 @@ jstat -gcmetacapacity 11236
 Hence, this type of error is thrown by JVM for having a large number of big classes. The following example uses javassist package from the link: http://jboss-javassist.github.io/javassist/ which enables Java bytecode manipulation.
 
 ```java
-import javassist.CannotCompileException;
+// MetaspaceDemo.java
+// JVM Parameters: -XX:MetaspaceSize=64M -XX:MaxMetaspaceSize=64M
+// javac -cp javassist.jar MetaspaceDemo.java
+// java -cp .:javassist.jar MetaspaceDemo
+
+package com.ranga.java.oom;
+
 import javassist.ClassPool;
 
 public class MetaspaceDemo {
-    public static void main(String args[]) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
         ClassPool classPool = ClassPool.getDefault();
-
-        for (int i = 0; i <100000000 ; i++) {
-            Class claz = classPool.makeClass("MetaspaceDemo" + i).toClass();
+        for (int i = 0; i < 70000; i++) {
+            Class claz = classPool.makeClass("MetaspaceDemo " + i).toClass();
+            System.out.println(claz.getName());
         }
     }
 }
-
-javac -cp javassist.jar MetaspaceDemo.java
-java -cp .:javassist.jar MetaspaceDemo
 ```
-This code will keep generating new classes and loading their definitions to Metaspace until the space is fully utilized and the java.lang.OutOfMemoryError: Metaspace is thrown. When launched with -XX:MaxMetaspaceSize=64m then on Mac OS X my Java 1.8.0_05 dies at around 70, 000 classes loaded.
+
+```sh
+
+$ javac -cp javassist.jar MetaspaceDemo.java
+$ java -cp .:javassist.jar MetaspaceDemo
+
+MetaspaceDemo 1
+MetaspaceDemo 2
+MetaspaceDemo 3
+..
+..
+MetaspaceDemo 68664
+MetaspaceDemo 68665
+
+Exception in thread "main" javassist.CannotCompileException: by java.lang.OutOfMemoryError: Metaspace
+	at javassist.ClassPool.toClass(ClassPool.java:1085)
+	at javassist.ClassPool.toClass(ClassPool.java:1028)
+	at javassist.ClassPool.toClass(ClassPool.java:986)
+	at javassist.CtClass.toClass(CtClass.java:1079)
+	at com.ranga.java.oom.MetaspaceDemo.main(MetaspaceDemo.java:14)
+Caused by: java.lang.OutOfMemoryError: Metaspace
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:642)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at javassist.ClassPool.toClass2(ClassPool.java:1098)
+	at javassist.ClassPool.toClass(ClassPool.java:1079)
+	... 4 more
+```
+
+This code will keep generating new classes and loading their definitions to Metaspace until the space is fully utilized and the **java.lang.OutOfMemoryError: Metaspace** is thrown. When launched with **-XX:MaxMetaspaceSize=64m** then on Mac OS X my Java 1.8.0_05 dies at around 70,000 classes loaded.
 
 The above code will continue to generate new classes at runtime and load their definitions into Metaspace until the space is fully utilized and java.lang.OutOfMemoryError: Metaspace is thrown.
 
