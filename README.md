@@ -2,6 +2,10 @@
 
 There are 9 types of **java.lang.OutOfMemoryError** in Java.
 
+<p align='center'>
+  <img scr='https://github.com/rangareddy/ranga-java-oom/blob/main/images/JVM_Archiitecture.png'>
+</p>
+
 1. [java.lang.OutOfMemoryError: Java heap space](https://github.com/rangareddy/ranga-java-oom/blob/main/java_heap_space.md)
 2. [java.lang.OutOfMemoryError: GC Overhead limit exceeded](https://github.com/rangareddy/ranga-java-oom/blob/main/gc_overhead_limit.md)
 3. [java.lang.OutOfMemoryError: Requested array size exceeds VM limit](https://github.com/rangareddy/ranga-java-oom/blob/main/array_size_exceeds.md)
@@ -12,6 +16,4 @@ There are 9 types of **java.lang.OutOfMemoryError** in Java.
 8. [java.lang.OutOfMemoryError: Kill process or sacrifice child](https://github.com/rangareddy/ranga-java-oom/blob/main/kill_process.md)
 9. [java.lang.OutOfMemoryError: Direct buffer memory](https://github.com/rangareddy/ranga-java-oom/blob/main/direct_buffer_memory.md)
 
-<p align='center'>
-  <img scr='https://github.com/rangareddy/ranga-java-oom/blob/main/images/JVM_Archiitecture2.png'>
-</p>
+
