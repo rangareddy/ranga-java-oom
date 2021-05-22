@@ -5,7 +5,7 @@ java.lang.OutOfMemoryError: GC Overhead limit exceeded occurs when garbage colle
 java.lang.OutOfMemoryError: GC Overhead limit exceeded indicates that the garbage collector is running all the time and Java program is making very slow progress. After a GC (garbage collection), if the garbage collector is spending more than 98% of its time doing garbage collection and if it is recovering less than 2% of the heap and has been doing so far the last 5 (compile time constant) consecutive garbage collections, then a java.lang.OutOfMemoryError is thrown.
 
 <p align='center'>
-   <img src='https://camo.githubusercontent.com/1c949c1f9b92aa1724d1f7e6d6871cdf284c2039803f5e742ae593409aa2560b/68747470733a2f2f7469616e6d696e6778696e672e636f6d2f696d616765732f4f4f4d2d6578616d706c652d736368656d61332e706e67'>
+   <img src='https://github.com/rangareddy/ranga-java-oom/blob/main/images/OOM_GC_OverHead.png'>
 </p>
 
 This error can be thrown from the Serial, Parallel or Concurrent, G1 collectors.
