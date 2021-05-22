@@ -3,7 +3,7 @@
 Java memory is separated into different regions:
 
 <p align="center">
-  <img src="https://tianmingxing.com/images/java.lang_.outofmemoryerror-permgen-space.png">
+  <img src="https://github.com/rangareddy/ranga-java-oom/blob/main/images/OOM_Permgen.png">
 </p>
 
 The size of all those regions, including the permgen area, are set during the JVM startup. If we do not set the size ourself, the platform-specific default value will be used.
