@@ -9,7 +9,7 @@ This error is thrown by the operating system. The operating system has processes
 The OutOfMemoryError : kill process or sacrifice occurs when one of the process consumes too much virtual memory and makes OS unstable, than OS decides to kills that process.
 
 <p align='center'>
-  <img src='https://camo.githubusercontent.com/ae8a52c3f98af80a83e6f837623073a711d80ef13b8a1170185bf0cbc9624ba9/68747470733a2f2f68617269746962636f626c6f672e66696c65732e776f726470726573732e636f6d2f323031362f31312f63617074757265372e706e67'/>
+  <img src='https://github.com/rangareddy/ranga-java-oom/blob/main/images/OOM_Kill_Process.png'/>
 </p>
 
 ```java
