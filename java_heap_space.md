@@ -7,7 +7,7 @@ The application tries to add more data into the heap space area, but there is no
 Java memory is divided into two different regions, these regions are called Heap (for Heap space) and Permgen (for Permanent Generation):
 
 <p align='center'>
-   <img src='https://camo.githubusercontent.com/96de2c8147afa199563d478e54796d152250e988c2368a26a4de4788dcb11af3/68747470733a2f2f7469616e6d696e6778696e672e636f6d2f696d616765732f6a6176612d6c616e672d6f75746f666d656d6f72796572726f722d6a6176612d686561702d73706163652e706e67'>   
+   <img src='https://github.com/rangareddy/ranga-java-oom/blob/main/images/OOM_Java_Heap.png'>   
 </p>
 
 The size of these regions is set during the startup of the Java Virtual Machine (JVM) and can be customized by specifying the JVM parameters -Xmx and -XX:MaxPermSize. If the size is not explicitly set, the platform-specific default value will be used.
