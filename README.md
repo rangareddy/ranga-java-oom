@@ -8,6 +8,6 @@ There are 9 types of **java.lang.OutOfMemoryError** in Java.
 4. [java.lang.OutOfMemoryError: Permgen space](https://github.com/rangareddy/ranga-java-oom/blob/main/permgen_space.md)
 5. [java.lang.OutOfMemoryError: Metaspace](https://github.com/rangareddy/ranga-java-oom/blob/main/meta_space.md)
 6. [java.lang.OutOfMemoryError: Unable to create new native thread](https://github.com/rangareddy/ranga-java-oom/blob/main/native_thread.md)
-7. [java.lang.OutOfMemoryError: request <bytes> for <reason>. Out of swap space?](https://github.com/rangareddy/ranga-java-oom/blob/main/swap_space.md)
+7. [java.lang.OutOfMemoryError: request `<bytes>` for `<reason>`. Out of swap space?](https://github.com/rangareddy/ranga-java-oom/blob/main/swap_space.md)
 8. [java.lang.OutOfMemoryError: Kill process or sacrifice child](https://github.com/rangareddy/ranga-java-oom/blob/main/kill_process.md)
 9. [java.lang.OutOfMemoryError: Direct buffer memory](https://github.com/rangareddy/ranga-java-oom/blob/main/direct_buffer_memory.md)
