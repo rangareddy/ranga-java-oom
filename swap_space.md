@@ -14,7 +14,7 @@ java.lang.OutOfMemoryError: Out of swap space error is often caused by operating
 **swap space** is a space used by the underlying operating system to store the contents in lieu of RAM in case it fills up. Every time you start your application, JVM allocates the appropriate amount of memory to all the regions depending on your VM parameter. This means, your application has an upper limit for the memory it can use. Hence, if your application happens to request more memory than the allocated limit, the operating system uses the swap space from the hard drive as a virtual memory. If the swap memory space is also fully consumed, JVM throws the error java.lang.OutOfMemoryError: request size bytes for reason. Are you out of swap space?
 
 <p align="center">
-  <img src="https://haritibcoblog.files.wordpress.com/2016/11/capture5.png">
+  <img src="https://github.com/rangareddy/ranga-java-oom/blob/main/images/OOM_SwapSpace.png">
 </p>
 
 When the total memory requested by the JVM is greater than the available physical memory, the operating system begins to swap the memory from the memory to the hard drive. The lack of physical memory and swap space causes the allocation to fail.
