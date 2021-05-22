@@ -5,10 +5,11 @@ Java has got a limit on the maximum array size your program can allocate. The ex
 Requested array size exceeds VM limit indicates that indicates that the application (or APIs used by that application) attempted to allocate an array that is larger than the heap size. For example, if an application attempts to allocate an array of 1024 MB but the maximum heap size is 512 MB then OutOfMemoryError will be thrown with “Requested array size exceeds VM limit”.
 
 <p align='center'>
-  <img src="https://camo.githubusercontent.com/7207fdefa44df44bf626a347b04f054ff9571009738c281f60928d91deda03db/68747470733a2f2f68617269746962636f626c6f672e66696c65732e776f726470726573732e636f6d2f323031362f31312f63617074757265362e706e67"/>
+  <img src='https://github.com/rangareddy/ranga-java-oom/blob/main/images/OOM_Requested_ArraySize.png'/>
 </p>
 
 In most cases the problem is either a configuration issue (heap size too small), or a bug that results in an application attempting to create a huge array, for example, when the number of elements in the array are computed using an algorithm that computes an incorrect size.
+
 ```java
 package com.ranga.oom;
 
