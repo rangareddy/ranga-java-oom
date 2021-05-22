@@ -30,9 +30,5 @@ dd if =/dev/zero of=swapfile bs=1024 count=655360
 mkswap swapfile 
 swapon swapfile
 ```
-<p align="center">
-  <img src="https://www.programmersought.com/images/111/f32d948e0aefd156a5eacec12627874f.png">
-</p>
-
 2. Increase the size of the machine's memory.
 3. Other service processes can be selectively split out.
