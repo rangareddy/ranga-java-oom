@@ -8,9 +8,8 @@ import java.util.List;
 
 public class GCOverheadLimitDemo {
     public static void main(String[] args) {
-        int count = 0;
         List<Employee> list = new ArrayList<>();
-        while (true) {
+        for(int count=0; count<1000000; count++) {
             System.out.println(++count);
             long id = count;
             String name = "Ranga " + id;

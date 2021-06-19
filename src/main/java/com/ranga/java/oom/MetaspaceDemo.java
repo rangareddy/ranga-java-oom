@@ -1,5 +1,6 @@
 // MetaspaceDemo.java
-// JVM Parameters: -XX:MetaspaceSize=64M -XX:MaxMetaspaceSize=256M
+// JVM Parameters: -XX:MetaspaceSize=64M -XX:MaxMetaspaceSize=64M
+// JVM Parameters: -XX:MetaspaceSize=64M -XX:MaxMetaspaceSize=128M
 // javac -cp javassist.jar MetaspaceDemo.java
 // java -cp .:javassist.jar MetaspaceDemo
 

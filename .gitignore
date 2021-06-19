@@ -17,3 +17,5 @@ out
 
 # Mac
 .DS_Store
+
+*.hprof
